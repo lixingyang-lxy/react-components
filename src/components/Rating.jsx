@@ -13,6 +13,7 @@ class Rating extends Component {
   }
   getValue() {
     // 我们的所有输入组件都提供了这个函数
+    debugger
     return this.state.rating;
   }
   setTemp(rating) {
