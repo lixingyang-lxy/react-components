@@ -20,7 +20,7 @@ class Suggest extends Component {
           id={this.props.id}
         />
         <datalist id={randomid}>
-          {this.props.options.map((item, idx) => (
+          {this.props.options && this.props.options.map((item, idx) => (
             <option value={item} key={idx} />
           ))}
         </datalist> 
