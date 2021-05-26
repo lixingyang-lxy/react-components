@@ -6,7 +6,7 @@ import Suggest from "./Suggest";
 
 class FormInput extends Component {
   getValue() {
-    return 'value' in this.refs.input
+    return "value" in this.refs.input
       ? this.refs.input.value
       : this.refs.input.getValue();
   }
@@ -46,6 +46,6 @@ FormInput.propTypes = {
   type: PropTypes.oneOf(["year", "suggest", "rating", "text", "input"]),
   id: PropTypes.string,
   options: PropTypes.array, // 用于<option>选项列表的自动补全功能
-  defaultValue: PropTypes.any
+  defaultValue: PropTypes.any,
 };
 export default FormInput;
